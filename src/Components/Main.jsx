@@ -10,8 +10,10 @@ export default function Main() {
     <div className="Container">
       <div id = "root">
         <Header />
-        <About />
 
+
+        <About />
+        
       </div>
     </div>
   );
