@@ -1,0 +1,101 @@
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.About_Me_Content {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 1.5rem;
+    margin: 0 auto;
+}
+
+.Section_Title {
+    position: relative;
+    display: table;
+    margin: 0 auto 3rem;
+}
+
+.Section_Title_Text {
+    border-bottom-color: #cccccc;
+    color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 3rem;
+    font-style: bold;
+}
+
+.Section_Title_Link_Button {
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    opacity: .5;
+
+}
+
+.About_Me_Infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.5rem;
+}
+
+
+.About_Me_Info-wrapper {
+    width: 33.3333333333%;
+}
+
+@media (max-width: 992px) {
+    .About_Me_Info-wrapper {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .About_Me_Info-wrapper {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+.About_Me_Info {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 14rem;
+    margin: 0 auto;
+    opacity: .8;
+
+}
+
+.About_Me_Icon {
+    position: relative;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .2rem;
+}
+
+.About_Me_Field {
+    display: flex;
+    flex-direction: column;
+}
+
+.About_Me_Field_Name {
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.About_Me_Field_Name_Value {
+    font-size: .875rem;
+    white-space: pre-wrap;
+}
