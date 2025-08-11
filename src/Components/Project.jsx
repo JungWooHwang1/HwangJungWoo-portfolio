@@ -1,11 +1,13 @@
 import "../CSS/Project.css"
+import ProjectItem from "../common/ProjectItem"
 import { GoLink } from "react-icons/go";
+import back1 from "../img/back1.jpg";
 
 
 export default function Project() {
     console.log("Project component rendered");
     return (
-        <section className="Project">
+        <section id="projects" className="Project">
             <div className="Project_Content">
                 <div className="Section_Title">
                     <h3 className="Section_Title_Text">PROJECT</h3>
@@ -23,27 +25,65 @@ export default function Project() {
                     </button>
                 </div>
                 <div className="Project_Details">
-                    <div className="Project_Detail">
-                        <h4 className="Project_Title">Project Title</h4>
-                        <p className="Project_Description">Project description goes here.</p>
-                    </div>
-                </div>
-                <div className="Project_Details">
-                    <div className="Project_Detail">
+                    <ProjectItem
+                        title="Project Title"
+                        period="2024.12"
+                        summaryTitle="Project title goes here."
+                        details={[
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ]}
+                        url="Project url goes here."
+                        technologies="React, Node.js, MongoDB"
+                        readmeUrl="README url goes here."
+                        backImage={back1}
+                    />
+                    
 
-                    </div>
-                </div>
-                <div className="Project_Details">
-                    <div className="Project_Detail">
+                    <ProjectItem
+                        title="Project Title"
+                        period="2024.12"
+                        summaryTitle="Project title goes here."
+                        details={[
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ]}
+                        url="Project url goes here."
+                        technologies="React, Node.js, MongoDB"
+                        readmeUrl="README url goes here."
+                    />
+                    <ProjectItem
+                        title="Project Title"
+                        period="2024.12"
+                        summaryTitle="Project title goes here."
+                        details={[
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ]}
+                        url="Project url goes here."
+                        technologies="React, Node.js, MongoDB"
+                        readmeUrl="README url goes here."
+                    />
+                    <ProjectItem
+                        title="Project Title"
+                        period="2024.12"
+                        summaryTitle="Project title goes here."
+                        details={[
+                            "Feature 1",
+                            "Feature 2",
+                            "Feature 3"
+                        ]}
+                        url="Project url goes here."
+                        technologies="React, Node.js, MongoDB"
+                        readmeUrl="README url goes here."
+                    />
 
-                    </div>
-                </div>
-                <div className="Project_Details">
-                    <div className="Project_Detail">
-
-                    </div>
                 </div>
 
+                
             </div>
         </section >
 

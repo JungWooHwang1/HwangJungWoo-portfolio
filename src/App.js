@@ -1,11 +1,11 @@
 import Main from './Components/Main';
-import { Reset } from 'styled-reset'
+import "./App.css"
+// import { Reset } from 'styled-reset'
 
 function App() {
   return (
     <div className="App">
-      <Reset />
-      {/* Reset CSS 적용 */}
+      {/* <Reset/> */}
       <Main />
     </div>
   );

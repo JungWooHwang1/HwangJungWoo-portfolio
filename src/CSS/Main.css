@@ -1,17 +1,17 @@
-
 .Content {
     display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 .ProfileIntro {
+    min-height: 100vh;
     position: relative;
-    background-color: #481929;
-    border: 1px solid #000;
+    background-color: #ffffff;
+    background-image: url("../img/react.jpg");
 }
 
 .ProfileIntro_Content {
@@ -23,5 +23,11 @@
 }
 
 .ProfileIntro_Title {
+    color: #f5f5f5;    
     font-size: 3rem;
+}
+
+.ProfileIntro_Subtitle {
+    color: #f5f5f5;
+    font-size: 1.5rem;
 }

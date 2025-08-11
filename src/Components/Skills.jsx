@@ -6,7 +6,7 @@ import { MdLanguage } from "react-icons/md";
 export default function Skills() {
 
     return (
-        <section className="Skills">
+        <section id = "skills" className="Skills">
             <div className="Skills_Content">
                 <div className="Section_Title">
                     <h3 className="Section_Title_Text">SKILL</h3>

@@ -1,11 +1,19 @@
+.Skills {
+    background-color: #f9c51d;
+}
+
+#skills {
+    scroll-margin-top: 4.5rem;
+}
+
+
 .Skills_Content {
     width: 100%;
     max-width: 71.25rem;
     padding: 4rem 1.5rem;
     margin: 0 auto;
-    background-color: brown;
+    
 }
-
 
 .Skills_Skill-sets {
     display: flex;
