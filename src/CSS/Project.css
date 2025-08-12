@@ -16,34 +16,45 @@
 }
 
 
-
-.Project_Detail {
-    display: flex;
+.Project_Item {
+    display: inline-grid;
+    /* 추가 */
     flex-direction: column;
     width: calc((100% - 2rem) / 2);
     padding: 2rem;
     background-color: #fff;
     box-shadow: 0 0 .5rem 0 rgba(68, 68, 68, .4);
     border-radius: 1rem;
-    transition: transform 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transform-style: preserve-3d;
+    flex-wrap: wrap;
+    gap: 2rem;
+    transition: transform 2s ;
     transform: perspective(800px) rotateY(0deg);
-    will-change: transform;
-    min-height: 320px;
-    position: relative;
-    perspective: 1000px;
-    overflow: hidden;
+    transform-style: preserve-3d;
 
 }
 
+.Project_Item>* {
+    grid-area: 1 / 1 / 1 / 1;
+    /* 앞뒷면 합치기 */
+    backface-visibility: hidden;
+    /* 뒷면 숨김 */
+}
 
-.Project_Detail:hover {
+
+.Project_Item:hover {
     transform: perspective(800px) rotateY(180deg);
-
 }
+
+
+.Project_Detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.Project_Detail_Front {}
 
 .Project_Detail_Back {
-
+    transform: rotateY(180deg);
 }
 
 .Project_Detail_Back_Image {

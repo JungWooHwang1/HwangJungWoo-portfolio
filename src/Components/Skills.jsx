@@ -1,12 +1,16 @@
 import "../CSS/Skills.css"
 import { GoLink } from "react-icons/go";
 import { MdLanguage } from "react-icons/md";
+import { IoLogoHtml5 } from "react-icons/io";
+import { BsDatabaseFillAdd } from "react-icons/bs";
+import { MdLogoDev } from "react-icons/md";
+import SkillSet from "../common/SkillSet";
 
 
 export default function Skills() {
 
     return (
-        <section id = "skills" className="Skills">
+        <section id="skills" className="Skills">
             <div className="Skills_Content">
                 <div className="Section_Title">
                     <h3 className="Section_Title_Text">SKILL</h3>
@@ -24,65 +28,33 @@ export default function Skills() {
                     </button>
                 </div>
                 <div className="Skills_Skill-sets">
-                    <div className="Skills_Skill-set">
-                        <div className="Skills_Name">
-                            <MdLanguage
-                                style={{
+                    <SkillSet
+                        icon={<MdLanguage />}
+                        language={"Language"}
+                        skills={["HTML", "CSS", "JavaScript", "TypeScript", "Java"]}
+                        colors = {["#E34F26","#1572B6","#F7DF1E","#3178C6","#C60001"]}
+                    />
+                    <SkillSet
+                        icon={<IoLogoHtml5 />}
+                        language={"Front-end"}
+                        skills={["React"]}
+                        colors = {["#61DAFB",]}
+                    />
 
-                                }}
-                            />
-                            Language</div>
-                        <ul className="Skills_List">
+                    <SkillSet
+                        icon={<BsDatabaseFillAdd />}
+                        language={"Back-end"}
+                        skills={["Spring Boot", "Firebase"]}
+                        colors = {["#6CB52D","#FFC400"]}
+                    
+                    />
+                    <SkillSet
+                        icon={<MdLogoDev />}
+                        language={"DevOps"}
+                        skills={["AWS(EC2)"]}
+                        colors = {["#2A3645"]}
+                    />
 
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 1</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 2</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 3</li>
-                        </ul>
-                    </div>
-                    <div className="Skills_Skill-set">
-                        <div className="Skills_Name">
-                            <MdLanguage
-                                style={{
-
-                                }}
-                            />
-                            Language</div>
-                        <ul className="Skills_List">
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 1</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 2</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 3</li>
-                        </ul>
-                    </div>
-                    <div className="Skills_Skill-set">
-                        <div className="Skills_Name">
-                            <MdLanguage
-                                style={{
-
-                                }}
-                            />
-                            Language</div>
-                        <ul className="Skills_List">
-
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 1</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 2</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 3</li>
-                        </ul>
-                    </div>
-                    <div className="Skills_Skill-set">
-                        <div className="Skills_Name">
-                            <MdLanguage
-                                style={{
-
-                                }}
-                            />
-                            Language</div>
-                        <ul className="Skills_List">
-
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 1</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 2</li>
-                            <li className="Skills_List_Item" style={{ backgroundColor: "#3d75a4", color: "#ffffff" }}>Skill 3</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 

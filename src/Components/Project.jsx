@@ -26,24 +26,22 @@ export default function Project() {
                 </div>
                 <div className="Project_Details">
                     <ProjectItem
-                        title="Project Title"
-                        period="2024.12"
+                        title="HJW_Portfolio"
+                        period="2025.08 개인프로젝트"
                         summaryTitle="Project title goes here."
                         details={[
-                            "Feature 1",
-                            "Feature 2",
-                            "Feature 3"
+                            "나만의 포트폴리오 사이트 개발",                            
                         ]}
                         url="Project url goes here."
-                        technologies="React, Node.js, MongoDB"
+                        technologies="React, Firebase"
                         readmeUrl="README url goes here."
                         backImage={back1}
                     />
                     
 
                     <ProjectItem
-                        title="Project Title"
-                        period="2024.12"
+                        title="HJW_Portfolio"
+                        period="2025.08 개인프로젝트"
                         summaryTitle="Project title goes here."
                         details={[
                             "Feature 1",

@@ -29,7 +29,7 @@ export default function About() {
                     <AboutMeInfo icon="email" label="이메일" value="xhdpc123@naver.com" />
                     <AboutMeInfo icon="school" label="최종학력" value="대림대학교" />
                     <AboutMeInfo icon="location" label="위치" value="안산시 단원구" />
-                    <AboutMeInfo icon="birthday" label="생일" value="2001-12-01" />
+                    <AboutMeInfo icon="birthday" label="생년월일" value="2001-12-01" />
                 </div>
 
             </div>
