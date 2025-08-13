@@ -1,0 +1,65 @@
+
+.react-logo-bg {
+    background: #222;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-logo-svg {
+    display: block;
+    /* 리액트 로고 회전 */
+    animation: react-logo-spin 6s linear infinite;
+    /* 로고 완성 후 회전 시작 */
+     animation-delay: 4s; 
+}
+
+
+@keyframes react-logo-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 원자핵: 처음에 투명, 점점 나타남 구현*/
+.react-nucleus {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: nucleusAppear 0.8s 0.5s forwards;
+}
+
+@keyframes nucleusAppear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 전자 궤도: stroke-dash로 그려지는 효과 구현 */
+.react-orbit {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    opacity: 1;
+    animation: orbitDraw 1.2s forwards;
+
+}
+
+.orbit1 {
+    animation-delay: 1.2s;
+}
+
+.orbit2 {
+    animation-delay: 2.0s;
+}
+
+.orbit3 {
+    animation-delay: 2.8s;
+}
+
+@keyframes orbitDraw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -17,6 +17,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 button {
     background: none;
     border: none;
@@ -33,11 +34,25 @@ button {
     right: 0;
     left: 0;
     z-index: 10;
-    transition: opacity .3s linear;
+    transition: background-color .3s linear, opacity .3s linear;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.Header--transparent {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.Header__Button {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+.Header--transparent .Header__Button {
+    color: #fff !important;
+}
 .Header_Content {
     width: 100%;
     max-width: 71.25rem;
@@ -51,6 +66,7 @@ button {
 .Header_Nav {
     display: flex;
 }
+
 
 .Header_Nav_Button {
     padding: 0 1rem;
