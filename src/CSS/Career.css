@@ -1,0 +1,62 @@
+.Career_Content {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 1.5rem;
+    margin: 0 auto;
+}
+
+.Career_companies {
+    display: flex;
+    flex-direction: column;
+}
+
+.Career_company {
+    display: flex;
+    flex-direction: column;
+}
+
+.Career_company_logo {
+
+    padding-left: 3rem;
+
+}
+
+.Career_company_logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+}
+
+.Career_company_background {}
+
+.Career_company_background-wrapper {
+    display: absolute;
+    width: 100%;
+    height: 35vh;
+    background-color: #fff;
+
+    border: 1px solid #ccc;
+}
+
+.Career_company_details {
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.Career_company_name {
+    padding-bottom: .5rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.Career_company_period{
+   padding-bottom: 1rem;
+   color: #6c757d;
+}

@@ -6,6 +6,7 @@ import Header from "./Header";
 import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project";
+import Career from "./Career";
 import "../CSS/Main.css";
 
 export default function Main() {
@@ -69,6 +70,7 @@ export default function Main() {
       <About />
       <Skills />
       <Project />
+      <Career />
       <ScrollToTopButton />
     </div>
   );

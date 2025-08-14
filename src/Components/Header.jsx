@@ -29,6 +29,7 @@ export default function Header() {
                     <button className="Header_Nav_Button" onClick={() => handleScroll("about")}>About me</button>
                     <button className="Header_Nav_Button" onClick={() => handleScroll("skills")}>Skill</button>
                     <button className="Header_Nav_Button" onClick={() => handleScroll("projects")}>Project</button>
+                    <button className="Header_Nav_Button" onClick={() => handleScroll("career")}>Career</button>
                 </nav>
             </div>
         </div>
